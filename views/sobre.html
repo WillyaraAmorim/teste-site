@@ -1,0 +1,19 @@
+<!-- views/sobre.html -->
+<div class="sobre text-center" ng-controller="SobreController">
+    <img ng-src="{{ sobreMim.foto }}" alt="Foto do Autor" class="rounded-circle mb-3" width="150">
+    <p>{{ sobreMim.descricao }}</p>
+    <div class="newsletter mb-4">
+        <h5>Receba nossas notificações</h5>
+        <input type="email" placeholder="Seu email" class="form-control d-inline-block" style="width: 60%;">
+        <button class="btn btn-success mt-2">Inscrever-se</button>
+    </div>
+    <div class="parceiros">
+        <h5>Parceiros</h5>
+        <div class="row">
+            <div class="col-md-4" ng-repeat="parceiro in sobreMim.parceiros">
+                <img ng-src="{{ parceiro.logo }}" alt="{{ parceiro.nome }}" class="img-fluid mb-2">
+                <p>{{ parceiro.nome }}</p>
+            </div>
+        </div>
+    </div>
+</div>

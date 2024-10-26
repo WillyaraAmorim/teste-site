@@ -1,0 +1,11 @@
+<!-- views/header.html -->
+<div class="header" style="background-color: #29053E;">
+    <div class="logo">
+        <img src="imagens/logo.png" alt="Logo do Entre nos Mundos" width="150">
+    </div>
+    <div class="social-icons">
+        <a ng-repeat="link in socialLinks" ng-href="{{ link.url }}" target="_blank">
+            <img ng-src="{{ link.icon }}" alt="{{ link.alt }}" width="40">
+        </a>
+    </div>
+</div>

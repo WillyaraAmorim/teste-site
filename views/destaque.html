@@ -1,0 +1,14 @@
+<!-- views/destaque.html -->
+<div class="destaque text-center">
+    <h3>Destaque</h3>
+    <div class="row justify-content-center">
+        <div class="card col-md-3" ng-repeat="livro in livrosDestaque">
+            <img ng-src="{{ livro.imagem }}" class="card-img-top" alt="{{ livro.titulo }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ livro.titulo }}</h5>
+                <p class="card-text">Data da Resenha: {{ livro.dataResenha }}</p>
+                <a ng-href="{{ livro.link }}" class="btn btn-primary">Leia Aqui</a>
+            </div>
+        </div>
+    </div>
+</div>

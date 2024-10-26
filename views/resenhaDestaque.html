@@ -1,0 +1,14 @@
+<!-- views/resenhasDestaque.html -->
+<div class="resenhas-destaque text-center" style="border-top: 1px dotted; border-bottom: 1px dotted;">
+    <div class="row">
+        <div class="col-md-6 mb-4" ng-repeat="resenha in resenhasDestaque">
+            <div class="card">
+                <img ng-src="{{ resenha.imagem }}" class="card-img-top" alt="{{ resenha.titulo }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ resenha.titulo }}</h5>
+                    <a ng-href="{{ resenha.link }}" class="btn btn-primary">Leia Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

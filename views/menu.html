@@ -1,0 +1,8 @@
+<!-- views/menu.html -->
+<nav class="menu-section text-center" style="border-top: 1px dotted; border-bottom: 1px dotted;">
+    <ul class="nav justify-content-center">
+        <li class="nav-item" ng-repeat="item in menuItems">
+            <a class="nav-link" ng-href="{{ item.link }}">{{ item.label }}</a>
+        </li>
+    </ul>
+</nav>
